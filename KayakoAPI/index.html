@@ -29,9 +29,7 @@ xhr.setRequestHeader("Connection", "close");
 
 				result = "<li>Status " +$(xhr.responseXML).find("status").text() + "</li>";
 				result += "<li>Error: " +$(xhr.responseXML).find("error").text() + "</li>";
-				result += "<li>Version: " +$(xhr.responseXML).find("version").text() + "</li>";
 				result += "<li>Session ID: " +$(xhr.responseXML).find("sessionid").text() + "</li>";
-			//	result += "<li>State: " + obj.State + "</li>";
 				//console.log(result);
 				$("#searchResults").html(result);
 				//$('#searchResults').listview('refresh');
