@@ -1,19 +1,12 @@
 $('#login-button').on('click', function(){
-	alert('lets begin with the api intergration dude !!');
-	var xhr = new XMLHttpRequest({mozSystem: true});
-	var url = "http://ekansh.kayako.com/staffapi/index.php?/Core/Default/Login";
-	var params = "username=admin&password=changeit";
-	xhr.open("POST", url, true);
-	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-	xhr.setRequestHeader("Content-length", params.length);
-	xhr.setRequestHeader("Connection", "close");
-
-	xhr.onreadystatechange = function() {
-	  if (xhr.readyState == 4) {
-		alert(xhr.responseXML);
-	  }
-	}
-	xhr.send(params);
+	var data = {"kayako_staffapi":{"status":"1","count":"10","tickets":{"ticket":[{"-id":"93","displayid":"UUZ-241-97338","departmentid":"7","departmenttitle":"Personal","statusid":"4","statustitle":"test","priorityid":"2","prioritytitle":"Medium","flagtype":"5","typeid":"5","typetitle":"Feedback","userid":"30","ownerstaffid":"1","ownerstaffname":"Ekansh - NA -","fullname":"Google","email":"google@google.com","lastreplier":"Ekansh - NA -","subject":"This is my second post","creationtime":"1381128340","lastactivity":"1384754989","laststaffreply":"1384754989","lastuserreply":"1381128340","slaplanid":"1","nextreplydue":"0","resolutiondue":"1381387540","replies":"7","ipaddress":"182.71.157.90","creator":"2","creationmode":"1","creationtype":"1","isescalated":"0","escalationruleid":"0","hasattachments":"0","hasnotes":"1","hasbilling":"1","hasfollowup":"0","hasdraft":"0"},{"-id":"90","displayid":"ISA-244-19049","departmentid":"2","departmenttitle":"General","statusid":"1","statustitle":"Open","priorityid":"1","prioritytitle":"Normal","flagtype":"0","typeid":"1","typetitle":"Issue","userid":"28","ownerstaffid":"1","ownerstaffname":"Ekansh - NA -","fullname":"googlemefasdfsa","email":"googlemefasdfsa@afdsfds.com","lastreplier":"Ekansh - NA -","subject":"test","creationtime":"1380885365","lastactivity":"1380885496","laststaffreply":"1380885496","lastuserreply":"1380885365","slaplanid":"1","nextreplydue":"0","resolutiondue":"1381317366","replies":"3","ipaddress":"182.71.157.90","creator":"2","creationmode":"1","creationtype":"1","isescalated":"0","escalationruleid":"0","hasattachments":"0","hasnotes":"0","hasbilling":"0","hasfollowup":"0","hasdraft":"0"},{"-id":"71","displayid":"TSH-495-99848","departmentid":"2","departmenttitle":"General","statusid":"1","statustitle":"Open","priorityid":"6","prioritytitle":"Critical","flagtype":"5","typeid":"4","typetitle":"Lead","userid":"1","userorganization":"Kayako","userorganizationid":"1","ownerstaffid":"1","ownerstaffname":"Ekansh - NA -","fullname":"Ekansh - NA -","email":"ekansh.srivastava@kayako.com","lastreplier":"Ekansh - NA -","subject":"Custom Field Combination via MySQL Script or Code","creationtime":"1372060714","lastactivity":"1380088353","laststaffreply":"1380088353","lastuserreply":"0","slaplanid":"1","nextreplydue":"0","resolutiondue":"1374730736","replies":"12","ipaddress":"182.71.157.90","creator":"1","creationmode":"2","creationtype":"1","isescalated":"1","escalationruleid":"1","hasattachments":"0","hasnotes":"1","hasbilling":"1","hasfollowup":"0","hasdraft":"0","tags":"escalated"},{"-id":"69","displayid":"QVI-410-92503","departmentid":"2","departmenttitle":"General","statusid":"1","statustitle":"Open","priorityid":"6","prioritytitle":"Critical","flagtype":"5","typeid":"1","typetitle":"Issue","userid":"1","userorganization":"Kayako","userorganizationid":"1","ownerstaffid":"1","ownerstaffname":"Ekansh - NA -","fullname":"Ekansh - NA -","email":"ekansh.srivastava@kayako.com","lastreplier":"Ekansh - NA -","subject":"Contents of the tickets showing blank","creationtime":"1372060658","lastactivity":"1379659750","laststaffreply":"1379659750","lastuserreply":"0","slaplanid":"1","nextreplydue":"0","resolutiondue":"1374730736","replies":"4","ipaddress":"182.71.157.90","creator":"1","creationmode":"2","creationtype":"1","isescalated":"1","escalationruleid":"1","hasattachments":"0","hasnotes":"1","hasbilling":"0","hasfollowup":"0","hasdraft":"0","tags":"escalated"},{"-id":"65","displayid":"UOQ-311-13705","departmentid":"2","departmenttitle":"General","statusid":"1","statustitle":"Open","priorityid":"6","prioritytitle":"Critical","flagtype":"5","typeid":"1","typetitle":"Issue","userid":"1","userorganization":"Kayako","userorganizationid":"1","ownerstaffid":"1","ownerstaffname":"Ekansh - NA -","fullname":"Ekansh - NA -","email":"ekansh.srivastava@kayako.com","lastreplier":"Ekansh - NA -","subject":"Chat Text invisible to customers","creationtime":"1372060525","lastactivity":"1372060525","laststaffreply":"1372060525","lastuserreply":"0","slaplanid":"1","nextreplydue":"1374601136","resolutiondue":"1374730736","replies":"0","ipaddress":"182.71.157.90","creator":"1","creationmode":"2","creationtype":"1","isescalated":"1","escalationruleid":"1","hasattachments":"0","hasnotes":"0","hasbilling":"0","hasfollowup":"0","hasdraft":"0","tags":"escalated"},{"-id":"64","displayid":"PHX-110-92641","departmentid":"2","departmenttitle":"General","statusid":"1","statustitle":"Open","priorityid":"6","prioritytitle":"Critical","flagtype":"5","typeid":"1","typetitle":"Issue","userid":"1","userorganization":"Kayako","userorganizationid":"1","ownerstaffid":"1","ownerstaffname":"Ekansh - NA -","fullname":"Ekansh - NA -","email":"ekansh.srivastava@kayako.com","lastreplier":"Ekansh - NA -","subject":"Error in SMTP","creationtime":"1372060491","lastactivity":"1377598286","laststaffreply":"1377598286","lastuserreply":"0","slaplanid":"1","nextreplydue":"0","resolutiondue":"1374730736","replies":"3","ipaddress":"182.71.157.90","creator":"1","creationmode":"2","creationtype":"1","isescalated":"1","escalationruleid":"1","hasattachments":"0","hasnotes":"0","hasbilling":"0","hasfollowup":"0","hasdraft":"0","tags":"escalated"},{"-id":"60","displayid":"BKI-371-19413","departmentid":"2","departmenttitle":"General","statusid":"1","statustitle":"Open","priorityid":"6","prioritytitle":"Critical","flagtype":"5","typeid":"1","typetitle":"Issue","userid":"1","userorganization":"Kayako","userorganizationid":"1","ownerstaffid":"1","ownerstaffname":"Ekansh - NA -","fullname":"Ekansh - NA -","email":"ekansh.srivastava@kayako.com","lastreplier":"Ekansh - NA -","subject":"1914 translation by H. Rackham","creationtime":"1372060054","lastactivity":"1379933476","laststaffreply":"1379933476","lastuserreply":"0","slaplanid":"1","nextreplydue":"0","resolutiondue":"1374730736","replies":"3","ipaddress":"182.71.157.90","creator":"1","creationmode":"2","creationtype":"1","isescalated":"1","escalationruleid":"1","hasattachments":"0","hasnotes":"0","hasbilling":"0","hasfollowup":"0","hasdraft":"0","tags":"escalated"},{"-id":"58","displayid":"JNR-895-22922","departmentid":"2","departmenttitle":"General","statusid":"1","statustitle":"Open","priorityid":"6","prioritytitle":"Critical","flagtype":"5","typeid":"1","typetitle":"Issue","userid":"21","ownerstaffid":"1","ownerstaffname":"Ekansh - NA -","fullname":"Ekansh - NA -","email":"ekansh.srivastava@kayako.com","lastreplier":"Ekansh - NA -","subject":"Android received Miracast support with Android 4.2.  With BlackBerry 10.2 also supporting Miracast, it appears this open-standard is gaining momentum, and is set to challenge Apple’s Airplay.  With non-Apple smartphones increasingly adopting Miracast, it ","creationtime":"1372059888","lastactivity":"1372059888","laststaffreply":"1372059888","lastuserreply":"0","slaplanid":"1","nextreplydue":"1374601136","resolutiondue":"1374730736","replies":"0","ipaddress":"182.71.157.90","creator":"1","creationmode":"2","creationtype":"1","isescalated":"1","escalationruleid":"1","hasattachments":"0","hasnotes":"0","hasbilling":"1","hasfollowup":"0","hasdraft":"0","tags":"escalated"},{"-id":"55","displayid":"GVN-481-19629","departmentid":"2","departmenttitle":"General","statusid":"1","statustitle":"Open","priorityid":"6","prioritytitle":"Critical","flagtype":"5","typeid":"1","typetitle":"Issue","userid":"21","ownerstaffid":"1","ownerstaffname":"Ekansh - NA -","fullname":"Ekansh - NA -","email":"ekansh.srivastava@kayako.com","lastreplier":"Ekansh - NA -","subject":"Wanted: Apps for Galaxy Smartphones","creationtime":"1369055743","lastactivity":"1375343955","laststaffreply":"1375343955","lastuserreply":"0","slaplanid":"1","nextreplydue":"0","resolutiondue":"1369872033","replies":"2","ipaddress":"182.71.157.90","creator":"1","creationmode":"2","creationtype":"1","isescalated":"1","escalationruleid":"1","hasattachments":"0","hasnotes":"1","hasbilling":"1","hasfollowup":"0","hasdraft":"0","tags":"escalated"},{"-id":"54","displayid":"OLB-612-38990","departmentid":"2","departmenttitle":"General","statusid":"1","statustitle":"Open","priorityid":"6","prioritytitle":"Critical","flagtype":"5","typeid":"3","typetitle":"Bug","userid":"21","ownerstaffid":"1","ownerstaffname":"Ekansh - NA -","fullname":"Ekansh - NA -","email":"ekansh.srivastava@kayako.com","lastreplier":"Ekansh - NA -","subject":"Yahoo’s Mayer Joins Acquisition Club","creationtime":"1369055703","lastactivity":"1369982444","laststaffreply":"1369982444","lastuserreply":"0","slaplanid":"1","nextreplydue":"0","resolutiondue":"1369872033","replies":"1","ipaddress":"182.71.157.90","creator":"1","creationmode":"2","creationtype":"1","isescalated":"1","escalationruleid":"1","hasattachments":"0","hasnotes":"0","hasbilling":"0","hasfollowup":"0","hasdraft":"0","tags":"escalated"}]}}};
+	$('#memo-list').addClass('hidden');
+	$('#ticket-list').removeClass("hidden");
+	var temp = '';
+	$.each(data.kayako_staffapi.tickets.ticket, function(index, obj){
+		temp += tickets(obj);
+	});
+	$('#ticket-list-content').html(temp);
 
 });
 
@@ -24,38 +17,14 @@ $('#navigator').click(function(){
 });
 
 
+function tickets(obj){
+	var temp = ["<div class='row tickets'>",
+							"<div><span><b>" + (obj.subject.length > 30 ?obj.subject.substring(0,30) + '..' : obj.subject) + "</b></span><span class='pull-right'>" +  obj.statustitle + "</span></div>",
+							"<div class=''>" + obj.fullname +  "<span class='pull-right'>" +  "4 Days Ago" + "</span></div>",
+							"</div>"];
 
-// 	<script>
-// 		$(document).ready(function(){
-//           //Invoke Pincode Search API
-// 		  $("#btnSearch").click(function(){
-// 		    pincode = $("#searchCriteria").val();
-// 		    var xhr = new XMLHttpRequest({mozSystem: true});
-// var url = "http://ekansh.kayako.com/staffapi/index.php?/Core/Default/Login";
-// var params = "username=admin&password=changeit";
-// xhr.open("POST", url, true);
+	return temp.join(' ');
+}
 
-// //Send the proper header information along with the request
-// xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
-// xhr.setRequestHeader("Content-length", params.length);
-// xhr.setRequestHeader("Connection", "close");
 
-// 			xhr.onreadystatechange = function() {
-// 			  if (xhr.readyState == 4) {
 
-// 				result = "<li>Status " +$(xhr.responseXML).find("status").text() + "</li>";
-// 				result += "<li>Error: " +$(xhr.responseXML).find("error").text() + "</li>";
-// 				result += "<li>Version: " +$(xhr.responseXML).find("version").text() + "</li>";
-// 				result += "<li>Session ID: " +$(xhr.responseXML).find("sessionid").text() + "</li>";
-// 			//	result += "<li>State: " + obj.State + "</li>";
-// 				//console.log(result);
-// 				$("#searchResults").html(result);
-// 				//$('#searchResults').listview('refresh');
-// 			  }
-// 			}
-// 			xhr.send(params);
-		  
-// 		  });
-// 		  });
-		  
-// 	</script>
