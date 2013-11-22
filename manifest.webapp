@@ -1,0 +1,16 @@
+{ 
+	"name": "Kyoku",
+	"version": "1.1",
+	"description": "A native firefox OS App for kyoku",
+	"launch_path": "/index.html",
+	"permissions": {
+	}, 
+	"developer": {
+	    "name": "Ankit Agrawal",
+	    "url": "#"
+	}, 
+	"icons": {
+    "60": "#",
+    "128": "#"
+  }
+}
