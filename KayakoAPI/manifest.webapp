@@ -1,0 +1,21 @@
+{
+    "version":"1.0",
+	"name": "Kayako",
+    "description": "This app gives you information on Pincodes (Zipcodes) of India!",
+    "launch_path": "/index.html",
+    "icons": {
+        "16": "/images/icon_016.png",
+        "32": "/images/icon_032.png",
+        "48": "/images/icon_048.png",
+        "128": "/images/icon_128.png"
+    },
+	"developer": {
+        "name": "Romin Irani",
+        "url": "http://www.rominirani.com"
+    },
+    "default_locale": "en",
+	"type": "privileged",
+    "permissions": {
+        "systemXHR": { "description": "Required to make Ajax Calls over the Network" }
+    }
+}
