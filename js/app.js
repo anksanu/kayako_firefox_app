@@ -19,3 +19,9 @@ $('#login-button').on('click', function(){
 		alert('this call is completed');
 	});
 });
+
+
+$('#navigator').click(function(){
+		$('div.sidenav').toggleClass('on');
+		$('#navigator').toggleClass('on');
+});

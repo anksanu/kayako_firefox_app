@@ -5,3 +5,39 @@ body {
 .m-t-s {
 	margin-top: 5px;
 }
+
+.sidenav
+    {
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        width: 200px;
+        overflow: scroll;
+        left:-200px; 
+        padding:0;
+        background-color: grey;
+    }
+
+    .sidenav.on
+    {    
+        left:0px;
+        /*-webkit-transition: all 2s ease 0s;
+        -moz-transition: all 2s ease 0s;
+        -o-transition: all 2s ease 0s;
+        transition: all 2s ease 0s;*/
+
+    }   
+
+    #navigator.on {
+    	position: absolute;
+    	top: 0px;
+    	left : 200px;
+    	/*-webkit-transition: all 2s ease 0s;
+      -moz-transition: all 2s ease 0s;
+      -o-transition: all 2s ease 0s;
+      transition: all 2s ease 0s;*/
+    }
+
+    .hidden {
+    	display: none;
+    }
