@@ -1,6 +1,6 @@
 {
     "version":"1.0",
-	"name": "Kayako",
+	"name": "KayakoAPI",
     "description": "This app gives you information on Pincodes (Zipcodes) of India!",
     "launch_path": "/index.html",
     "icons": {
