@@ -1,0 +1,19 @@
+{
+    "name": "Kayako",
+    "version": "1.0",
+    "description": "Kayako Helpdesk",
+    "launch_path": "/index.html",
+    "permissions": {
+        "storage": {
+            "description": "Required for storing and retrieving notes."
+        }
+    },
+    "developer": {
+        "name": "Ekansh Praveen",
+        "url": "http://www.kayako.com"
+    },
+    "icons": {
+        "60": "/style/icons/icon_60.png",
+        "128": "/style/icons/icon_128.png"
+    }
+}
