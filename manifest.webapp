@@ -12,5 +12,9 @@
 	"icons": {
     "60": "#",
     "128": "#"
-  }
+  },
+  "type": "privileged",
+  "permissions": {
+    "systemXHR": { "description": "Required to make Ajax Calls over the Network" }
+	}
 }
