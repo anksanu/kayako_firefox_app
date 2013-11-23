@@ -83,10 +83,11 @@ h4{
 		  $("#btnSearch").click(function(){
 		    username = $("#username").val();
 		    password = $("#password").val();
+		    helpdesk = $('#helpdesk').val();
 		    // username = 'admin';
 		    // password = 'changeit';
 		    var xhr = new XMLHttpRequest({mozSystem: true});
-				var url = "http://ekansh.kayako.com/staffapi/index.php?/Core/Default/Login";
+				var url = "http://" + helpdesk + "/staffapi/index.php?/Core/Default/Login";
 				var params = "username="+username+"&password="+password;
 				xhr.open("POST", url, true);
 
@@ -117,7 +118,7 @@ h4{
 
 function tempLogin() {
 		    var xhr = new XMLHttpRequest({mozSystem: true});
-				var url = "http://ekansh.kayako.com/staffapi/index.php?/Tickets/Retrieve";
+				var url = "http://" + helpdesk + "/staffapi/index.php?/Tickets/Retrieve";
 				var params = "sessionid=" + sessionId + "&departmentid=&statusid=&ownerid=1&wantticketdata=0&wantattachmentdata=0&sortby=ticketid&sortorder=desc&limit=10&start=0";
 				xhr.open("POST", url, true);
 
@@ -234,6 +235,7 @@ function tickets(obj){
 		</div><!-- /header -->
 	<center><img src="images/logo.png" alt="Smiley face" height="150" width="250"> </center>
 		<div data-role="content" align="center">
+					<input type="text" id="helpdesk" value="" placeholder="Helpdesk url"/>
 	        <input type="text" id="username" value="" placeholder="Username" autofocus/>
 	        <input type="password" id="password" value="" placeholder="Password"/>
 	        <a href="#" id="btnSearch" data-role="button">Login</a>
